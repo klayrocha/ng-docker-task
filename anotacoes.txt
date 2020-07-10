@@ -1,0 +1,8 @@
+1 - ng build --prod
+
+2 - Fazer o build da imagem
+    docker build -f Dockerfile -t ng-docker-task .
+
+3 - Rodar o container da imagem criada
+    docker run --name ng-docker-task -d -p 4200:80 ng-docker-task
+
